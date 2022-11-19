@@ -1,10 +1,8 @@
-## Latihan Membuat list, menambahkan, mengedit, mengambil elemen pada list di Python.
+# praktikum5 Membuat list, menambahkan, mengedit, mengambil elemen pada list di Python.
 
 #### Repository ini sebagai tugas Mata kuliah Bahasa Pemrogramman.
 
-1. Baik Pertama-tama buatlah sebuah Folder `Praktikum5` dan didalamnya diisi File `List.py` & `Praktikum5.py` seperti berikut :
-
-    `Note Untuk penamaan folder dan file bisa sesuai keinginan kalian`
+1. Baik Pertama-tama buatlah sebuah Folder `Praktikum5`
 
    ![5030ee7b-a58f-460f-97f6-6db9b83b47a9](https://user-images.githubusercontent.com/115473865/202859132-1bca2fc2-817b-43c1-8345-449db16a53cc.jpg)
 
