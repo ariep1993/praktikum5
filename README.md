@@ -1,77 +1,62 @@
-## Latihan Membuat list, menambahkan, mengedit, mengambil elemen pada list di Python.
+# praktikum5 Membuat list, menambahkan, mengedit, mengambil elemen pada list di Python.
 
 #### Repository ini sebagai tugas Mata kuliah Bahasa Pemrogramman.
 
-1. Baik Pertama-tama buatlah sebuah Folder `Praktikum5` dan didalamnya diisi File `List.py` & `Praktikum5.py` seperti berikut :
+1. Baik Pertama-tama buatlah sebuah Folder `Praktikum5` 
 
     `Note Untuk penamaan folder dan file bisa sesuai keinginan kalian`
-
-   ![img folder](img/folder.png)
+   
+![5a026d59-d577-4635-827a-65586afa6ec3](https://user-images.githubusercontent.com/115473865/202857633-3ada68ef-94bc-4106-9f53-6d48de14ef46.jpg)
 
 2. Selanjutnya buka file `List.py` lalu masukan code dibawah ini :
 
    ```Python
    # membuat 5 list dengan type data yang berbeda
 
-    listData = ["Teknik Informatika", "UPB", 650000, True, "Fakultas Teknik"]
+    # membuat list
+print("Buat sebuah list sebanyak 5 elemen dengan nilai bebas")
+list = [1, 2, 3, 4, 5]
+print(list)
 
-    ###########################
-    # mengakses element list #
-    #########################
+# mengakses list
+print("Menampilkan elemen 3")
+print(list[2])
 
-    # menampilkan element ke-3 pada sebuah list
-    print(listData[2])
+print("ambil nilai elemen 2 sampai ke 4")
+print(list[1:4])
 
-    # menampilkan elemen ke-2 sampai ke-4
-    print(listData[1:4])
+print("ambil elemen terakhir")
+print(list[-1])
 
-    # menampilkan elemen terakhir
-    print(listData[4])
-    # atau bisa juga seperti ini
-    print(listData[-1])
+# mengubah elemen list
+print("ubah elemen 4 dengan nilai lainnya")
+list[4]=10
+print(list[3])
 
-    ##########################
-    # Mengubah element list #
-    ########################
+print("ubah elemen 4 sampai dengan elemen terakhir")
+list[4:5]=[20,11]
+print(list)
 
-    # Merubah elemen ke-4 dengan nilai lain
-    listData[3] = False
-    print(listData)
+# Tambah elemen list
+print("Ambil 2 bagian dari list pertama(A) dan jadikan list ke 2(B)")
+list_pertama=list[3:5]
+print(list_pertama)
 
-    # Merubah elemen ke-4 sampai dengan terakhir degan nilai lain
-    listData[3:5] = [True, "TI22B1"]
-    print(listData)
+print("tambah list B dengan nilai string")
+list_pertama.append("guest")
+print(list_pertama)
 
-    ##########################
-    # Menambah element list #
-    ########################
+print("Tambah list B dengan 3 nilai")
+list_pertama.append(["guest",7,8])
+print(list_pertama)
 
-    # membuat listA dan diisi oleh element yang ada di listData
-    listA = listData
-
-    # membuat list B dengan element masih kosong
-    listB = []
-
-    # mengambil 2 nilai dari listA lalu simpan ke listB
-    listB = listA[0:2]
-    print(listB)
-
-    # Menambahkan list B dengan nilai string
-    listB.append("Fakultas Teknik")
-    print(listB)
-
-    # Menambahkan list B dengan 3 nilai
-    listB.extend(["Teknik Sipil", "Teknik Lingkungan", "Teknik Industri"])
-    print(listB)
-
-    # Menggabungkan list B dengan listA
-    listGabungan = listA + listB
-    print(listGabungan)
-    ```
+print("Menggabungkan list B dengan list A")
+gabung=list_pertama+list
+print(gabung)
 
 3. Selanjutnya jalankan file dengan cara buka terminal lalu ketikan `python List.py` dan berikut hasilnya :
 
-    ![img hasil List.py](img/list.png)
+   
 
 
 ## Membuat program input data mahasiswa beserta nilai dan disimpan didalam List.
