@@ -1,69 +1,87 @@
-# praktikum5 Membuat list, menambahkan, mengedit, mengambil elemen pada list di Python.
+## Latihan Membuat list, menambahkan, mengedit, mengambil elemen pada list di Python.
 
 #### Repository ini sebagai tugas Mata kuliah Bahasa Pemrogramman.
 
-1. Baik Pertama-tama buatlah sebuah Folder `Praktikum5` 
+1. Baik Pertama-tama buatlah sebuah Folder `Praktikum5` dan didalamnya diisi File `List.py` & `Praktikum5.py` seperti berikut :
 
     `Note Untuk penamaan folder dan file bisa sesuai keinginan kalian`
-   
-![5a026d59-d577-4635-827a-65586afa6ec3](https://user-images.githubusercontent.com/115473865/202857633-3ada68ef-94bc-4106-9f53-6d48de14ef46.jpg)
+
+   ![5030ee7b-a58f-460f-97f6-6db9b83b47a9](https://user-images.githubusercontent.com/115473865/202859132-1bca2fc2-817b-43c1-8345-449db16a53cc.jpg)
+
 
 2. Selanjutnya buka file `List.py` lalu masukan code dibawah ini :
 
    ```Python
    # membuat 5 list dengan type data yang berbeda
 
-    # membuat list
-print("Buat sebuah list sebanyak 5 elemen dengan nilai bebas")
-list = [1, 2, 3, 4, 5]
-print(list)
+    listData = ["Teknik Informatika", "UPB", 650000, True, "Fakultas Teknik"]
 
-# mengakses list
-print("Menampilkan elemen 3")
-print(list[2])
+    ###########################
+    # mengakses element list #
+    #########################
 
-print("ambil nilai elemen 2 sampai ke 4")
-print(list[1:4])
+    # menampilkan element ke-3 pada sebuah list
+    print(listData[2])
 
-print("ambil elemen terakhir")
-print(list[-1])
+    # menampilkan elemen ke-2 sampai ke-4
+    print(listData[1:4])
 
-# mengubah elemen list
-print("ubah elemen 4 dengan nilai lainnya")
-list[4]=10
-print(list[3])
+    # menampilkan elemen terakhir
+    print(listData[4])
+    # atau bisa juga seperti ini
+    print(listData[-1])
 
-print("ubah elemen 4 sampai dengan elemen terakhir")
-list[4:5]=[20,11]
-print(list)
+    ##########################
+    # Mengubah element list #
+    ########################
 
-# Tambah elemen list
-print("Ambil 2 bagian dari list pertama(A) dan jadikan list ke 2(B)")
-list_pertama=list[3:5]
-print(list_pertama)
+    # Merubah elemen ke-4 dengan nilai lain
+    listData[3] = False
+    print(listData)
 
-print("tambah list B dengan nilai string")
-list_pertama.append("guest")
-print(list_pertama)
+    # Merubah elemen ke-4 sampai dengan terakhir degan nilai lain
+    listData[3:5] = [True, "TI22B1"]
+    print(listData)
 
-print("Tambah list B dengan 3 nilai")
-list_pertama.append(["guest",7,8])
-print(list_pertama)
+    ##########################
+    # Menambah element list #
+    ########################
 
-print("Menggabungkan list B dengan list A")
-gabung=list_pertama+list
-print(gabung)
+    # membuat listA dan diisi oleh element yang ada di listData
+    listA = listData
+
+    # membuat list B dengan element masih kosong
+    listB = []
+
+    # mengambil 2 nilai dari listA lalu simpan ke listB
+    listB = listA[0:2]
+    print(listB)
+
+    # Menambahkan list B dengan nilai string
+    listB.append("Fakultas Teknik")
+    print(listB)
+
+    # Menambahkan list B dengan 3 nilai
+    listB.extend(["Teknik Sipil", "Teknik Lingkungan", "Teknik Industri"])
+    print(listB)
+
+    # Menggabungkan list B dengan listA
+    listGabungan = listA + listB
+    print(listGabungan)
+    ```
 
 3. Selanjutnya jalankan file dengan cara buka terminal lalu ketikan `python List.py` dan berikut hasilnya :
 
-   
+    ![873e3f13-6c54-4b74-a855-ed43a541d6c7](https://user-images.githubusercontent.com/115473865/202859163-704670f3-9158-4ac2-bc57-6adb338bab6b.jpg)
+
 
 
 ## Membuat program input data mahasiswa beserta nilai dan disimpan didalam List.
 
   Berikut Flowchart program yang akan kita buat :
+  
+![flowchart](https://user-images.githubusercontent.com/115473865/202859242-e153d42b-6fd3-4f4b-8f5f-8a781169cf79.png)
 
-  ![flowchart program](img/flowchart.png)
 
 #### Requirement
 - Pip [install pip](https://pypi.org/project/pip/)
@@ -72,7 +90,8 @@ print(gabung)
 
 1. Pertama kita install Package `Tabulate` dengan cara buka terminal lalu copas `pip install tabulate` sebagai berikut :
 
-    ![tabulate](img/tabulate.png)
+    ![tabulate](https://user-images.githubusercontent.com/115473865/202859327-a2549745-5c50-400d-b68a-da77a0c89e7e.png)
+
 
 2. Lalu buka file `Praktikum5.py` dan masukan code berikut
 
@@ -121,8 +140,8 @@ print(gabung)
 
 3. Selanjutnya jalankan file dengan cara buka terminal lalu ketikan `python Praktikum5.py` dan berikut hasilnya :
 
-    ![hasil praktium5](img/praktikum5.png)
+    ![c17fd5f4-c3d7-4553-be10-8243dfacb22b](https://user-images.githubusercontent.com/115473865/202859374-95ce214f-dc7f-4f67-b4fc-df52922ce949.jpg)
+
 
     `Selesai terima kasih`
 
-    [saweria](https://saweria.co/adamwebdev)
